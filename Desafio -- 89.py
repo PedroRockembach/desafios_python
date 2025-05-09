@@ -4,7 +4,9 @@ import os
 #pergunte ao usuario se o mesmo gostaria de ver alguma nota separadamente
 
 os.system("cls")
+
 boletim = [[],[],[],[]] #Nome - Prova 1 - Prova 2
+usuario = '000'
 
 while True:
     
@@ -39,4 +41,17 @@ for b in range(len(boletim[0])):
     print(f"{b:<4}{boletim[0][b]:>10}{boletim[3][b]:>12}")
     
 print("="*30)
+
+while True:
+    
+    usuario = int (input("Deseja mostrar as notas de um aluno? [999 p parar]: "))
+    
+    if usuario == 999:
+        
+        break
+    
+    if usuario <= len(boletim)-1:
+        
+        print(f"As Notas do/da {boletim[0][usuario]} são {boletim[1][usuario]} na primeira prova e {boletim[2][usuario]} na segunda.")
+        
     
