@@ -1,5 +1,8 @@
+import os
+
 dados = dict()
 dados = {'nome':"Pedro","idade":"25"}
+
 print(dados['nome'])
 print(dados['idade'])
 
@@ -8,6 +11,7 @@ print(dados['idade'])
 dados['sexo'] = 'M'
 
 #outro metodo de criação de dicionarios 
+
 filmes = {
     'titulo': 'Star Wars',
     'ano':'1977',
@@ -23,3 +27,17 @@ print(filmes.values()) #-> retorna valores de filmes
 print(filmes.keys()) #-> retorna valores de chaves
 
 print(filmes.items()) #-> retorna valores de items
+
+os.system('cls')
+
+#f - strings com dicionario 
+print(f"{filmes["titulo"]} foi lançado em {filmes["ano"]}")
+
+
+for k, v in filmes.items():
+    print(f"o {k} é {v}")
+    
+#estrutura de listas com dicionarios
+
+locadora = []
+locadora.append(filmes)
