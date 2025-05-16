@@ -15,4 +15,4 @@ preçokm=kilometro*float(0.15)
 
 aluguel=dias*int(60)+preçokm
 
-print(f'o preço total ficou em \033[1;32m{aluguel}\033[m :polegar_para_cima:',language='pt')
+print(f'o preço total ficou em \033[1;32m{aluguel}\033[m')
