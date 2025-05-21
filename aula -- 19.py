@@ -22,7 +22,7 @@ filmes = {
 #ja os nomes de cada partição ex: titulo, ano e diretor, chamamos de CHAVES
 #E o todo é chamado de items
 
-print(filmes.values()) #-> retorna valores de filmes
+print(filmes.values()) #-> retorna valores de values
 
 print(filmes.keys()) #-> retorna valores de chaves
 
