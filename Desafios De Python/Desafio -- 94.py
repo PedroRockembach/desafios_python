@@ -4,8 +4,10 @@ os.system("cls")
 
 velhos = []
 idades = []
+
 __dados__ = []
 __mulheres__ = []
+
 somaidade = 0
 
 #crie um programa que leia nome, idade e sexo de varias pessoas, guardando os dados de cada pessoa em um dict e todos os dict em uma lista
@@ -17,6 +19,7 @@ while True:
     __pessoa__["nome"].append(str(input("Digite um nome: ")))
     __pessoa__["idade"].append(float(input("Digite a idade: ")))
     #começa a inserir pessoas
+    
     idades.append(__pessoa__["idade"][0])
     
     somaidade += __pessoa__["idade"][0]
@@ -56,9 +59,12 @@ while True:
         mediaidade = somaidade / len(__dados__)    
         print('='*60)
         break
+    
 print(F" Foram cadastradas {len(__dados__)} pessoas")
+
 for pessoa in __dados__: 
-    #Printa as pessoas da lista      
+    #Printa as pessoas da lista    
+      
     print(f"\033[31mEssa é a lista {pessoa}\033[m")
     
 print('='*60)    
@@ -73,6 +79,7 @@ if len(__mulheres__) > 0:
     
     for mulheres in __mulheres__:
         print(mulheres[0])
+        
 else:
     
     print("A lista não possui mulheres ") 
