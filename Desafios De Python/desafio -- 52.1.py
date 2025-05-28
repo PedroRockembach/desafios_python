@@ -7,11 +7,11 @@ os.system('cls')
 
 print('\033[35mBem vindo ao verificador de numeros primos\033[m')
 
-#sleep(2)
+sleep(2)
 
 print('Carregando...')
 
-#sleep(2)
+sleep(2)
 
 while True:
     n=int(input('\033[35mInforme o numero a ser verificado: \033[m'))
