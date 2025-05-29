@@ -9,10 +9,10 @@ sleep(3)
 cont=0
 n=int(input('\033[35mDigite um numero para verificar:\033[m '))
 for a in range(1,n+1):
-    if n/a==n or n/a==1:
+    if n / a == n or n / a == 1:
         print(f'\033[32m{a}\033[m',end=' ')
         cont+=1
-    elif n%a==0:
+    elif n % a == 0:
         print(f'\033[33m{a}\033[m',end=' ')  
         cont+=1
     else:
