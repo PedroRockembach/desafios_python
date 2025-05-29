@@ -10,7 +10,6 @@ print('Carregando...')
 sleep(1)
 
 frase=str(input('Digite sua frase aqui: ')).strip().lower()
-
 palavra=frase.split()
 junto=''.join(palavra)
 inverso='' #inverso=junto[::-1] funciona igual esse for
