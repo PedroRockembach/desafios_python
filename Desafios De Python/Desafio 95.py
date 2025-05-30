@@ -54,13 +54,16 @@ for k,item in enumerate(time):
     
 print("-="*30)
 while True:
-    
-    seletor = int(input("Voce deseja mostrar os status de um jogador?se sim, qual?[COD] "))
     print('Numeros negativos param')
+    seletor = int(input("Voce deseja mostrar os status de um jogador?se sim, qual?[COD] "))
+    
     print("-="*30)   
-
     if seletor < 0:
         break 
     
-    for item in time[seletor].values():
-        print(f"{item}")
+    elif seletor >= len(time):
+        print("JOGADOR INVALIDO")
+
+    else:
+        for item in time[seletor].values():
+            print(f"{item}")
