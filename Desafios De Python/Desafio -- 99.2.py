@@ -1,5 +1,8 @@
 #Desafio -- 99
 def maior(*num):
+    """
+    Função que recebe uma lista e encontra o maior valor informado
+    """
     from time import sleep
     
     if not num: 
