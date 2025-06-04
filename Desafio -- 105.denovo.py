@@ -3,6 +3,14 @@ from os import system
 system("cls")
 
 def notas(*num,sit=True):
+    """recebe valores e acha, maior menor e media no retorno
+
+    Args:
+        sit (bool, optional): Arguemnto que mostra se media > que 7. Defaults to True.
+
+    Returns:
+        _type_: _description_
+    """
     
     maior_valor = max(num)
     menor_valor = min(num)
