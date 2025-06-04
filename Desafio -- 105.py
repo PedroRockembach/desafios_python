@@ -5,8 +5,26 @@ system("cls")
 def linha():
     print("-"*30)
 
-def notas(nome='<nome>',nota1=0,nota2=0):
+def notas(nome='<nome>',nota1=0,nota2=0,situ=True):
+    """Função que aceita uma entrada de note e duas numericas e retorna o "boletim" de um aluno
+
+    Args:
+        nome (str, optional): Nome do aluno. Defaults to <nome>.
+        nota1 (float, optional): Primeira Nota. Defaults to 0.
+        nota2 (float, optional): Segunda Nota. Defaults to 0.
+        situ (bool, optional): Variavel opcional para mostrar no fim a situação final do aluno em media 7 . Defaults to True.
+
+    Returns:
+        retorna:
+        nome:
+        nota 1:
+        nota 2:
+        media:
+        if situ==true
+        aprovado/reprovado
+    """
     
+    #opção para adicionar em dict
     '''
     boletim["nome"].append(nome)
     boletim["nota_um"].append(nota1)
@@ -23,17 +41,22 @@ def notas(nome='<nome>',nota1=0,nota2=0):
         "nota_um":nota1,
         "nota_dois":nota2,
         "media":media        
-    }
-
-    
+    }  
     linha()
-    return ( 
+    
+    mensagem =(
             f'As nota do aluno: {boletim["nome"]}\n'
             f'Sua primeira nota foi {boletim["nota_um"]}\n'
             f'A segunda foi {boletim["nota_dois"]}\n'
             f'Sua media foi {boletim["media"]:.2f}\n'
-        )
-    
+            )
+    if situ:
+        if media >= 7:
+            mensagem +='O aluno foi \033[32mAPROVADO\033[m\n'
+        else:
+            mensagem +='O aluno foi \033[31mREPROVADO\033[m\n'
+    return mensagem
+        
 #PRINCIPAL 
 
 while True:    
@@ -41,9 +64,9 @@ while True:
     
     linha()   
     
-    nome_entrada = str(input("Digite seu nome: "))        
-    nota_um = str(input("Digite sua nota: "))
-    nota_dois = str(input("Digite a segunda nota: "))
+    nome_entrada = str(input("      Digite seu nome: "))        
+    nota_um = str(input("       Digite sua nota: "))
+    nota_dois = str(input("     Digite a segunda nota: "))
     
     try:
         nota_um = float(nota_um)
