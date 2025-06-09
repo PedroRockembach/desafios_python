@@ -22,7 +22,7 @@ for b in range(-1,-5,-1):  #passo ao contrario
 #print(f"os ultimos times foram {times[-4:]})  <- opção
   
     print(f' {times[b]} ',end = ' -> ')
-print('4 Ultimos colodados')
+print('4 Ultimos colocados')
         #os 4 ultimos 
   
 print('\n')    
