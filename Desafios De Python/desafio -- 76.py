@@ -20,7 +20,7 @@ produtos = (
 
 # Tabela = 
 
-'''print(f"""
+'''
 -=-=-=Preços 2024 Papelaria-=-=-=
 PRODUTO         |      PREÇO
 {produtos[0]}        |      {produtos[1]}      
@@ -28,7 +28,7 @@ PRODUTO         |      PREÇO
 {produtos[4]}           |      {produtos[5]}   
 {produtos[6]}          |      {produtos[7]}   
 {produtos[8]}       |      {produtos[9]}   
-{produtos[10]}        |      {produtos[11]} """)'''
+{produtos[10]}        |      {produtos[11]} '''
 
 for item in range(0, len(produtos)):
     if item % 2 == 0:

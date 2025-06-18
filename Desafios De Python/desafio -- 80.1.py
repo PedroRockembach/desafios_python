@@ -1,7 +1,9 @@
 import os 
 
 os.system('cls')
+
 numeros = []
+
 #crie um programa que: o usuario digite 5 valores e os cadastre em uma lista ja na posição correta de inserção(sem usar .sort) 
 #por fim mostre a lista ordenada
 
@@ -23,7 +25,5 @@ for c in range(0,5):
                 numeros.insert(pos, entrada)
                 break 
             pos+=1
-            
-            
-        
+               
 print(numeros)
