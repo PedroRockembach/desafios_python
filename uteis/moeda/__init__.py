@@ -38,6 +38,7 @@ def dados_monetarios(entrada):
     validade = False
     while not validade:
         msg = str(input(entrada)).replace(',','.').strip()
+        
         if msg.isalpha() or entrada.strip() == '':
             print("\033[31mERRO! digite apenas numeros validos!\033[m")
         else:
